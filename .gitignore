@@ -1,0 +1,28 @@
+# Local builds, archives and device-signing material
+/build/
+DerivedData/
+.build/
+*.xcarchive
+*.xcresult
+*.ipa
+*.p8
+*.p12
+*.mobileprovision
+*.provisionprofile
+
+# Per-user editor and OS files
+xcuserdata/
+*.xcuserstate
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local desktop binary, decompiler output and debugger scratch files
+/research/decompiled/
+/research/rea-snapshot.json
+/tools/xair
+/tools/tree.jsonl
+/tools/tables.json
+/tools/fx.json
+/tools/memmap.json
+/tools/strtabs.json

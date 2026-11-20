@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057C30C6558C25809B94518E /* MetersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97556D8F6DB0A8D0447844BB /* MetersView.swift */; };
+		178FEC826000CD7C101C3EAF /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD5E3218E8AFC9CE9B08AD3 /* SetupView.swift */; };
+		189BA91F26D587236B9168E2 /* XAirKit in Frameworks */ = {isa = PBXBuildFile; productRef = F93B546E608475049C5E2D00 /* XAirKit */; };
+		4517304761109A8952B6BF34 /* MixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FA6262006643828AD75D53 /* MixerView.swift */; };
+		528E1092C66E6978A8F37FA9 /* XAirModernUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560470D66CFF4FD8997BDFF /* XAirModernUITests.swift */; };
+		6FA2D55D904109439DB8B224 /* EffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE42EC62B1A6C2031FBE1F5 /* EffectsView.swift */; };
+		9699F33718C0AC773DB0247E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3E6861C734E410AD5C97FF /* MainView.swift */; };
+		A00809A4237C5C9058CF8566 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9486D321F149648494B9884 /* ConnectView.swift */; };
+		B35CD16F42E3690F5514F95A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7BD937CDBBA410BC3C5D0E /* Assets.xcassets */; };
+		B886A90ACF2B76DEF3ABAC1B /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAA1AB6FB2057285FD02119 /* ChannelView.swift */; };
+		CA9CBD40D2D3CE764E04B5C4 /* ParamControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40F223DF378E7E7EE01016 /* ParamControls.swift */; };
+		CC941DA59F08637046D292A9 /* ScenesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC931EAAC48D6B93103AB002 /* ScenesView.swift */; };
+		D113D21009808C20195CF452 /* EQGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B85A650464337882E644D /* EQGraph.swift */; };
+		D43A5861FDF6B1815C1FE8F1 /* RoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFE81E9FAABADD2382D437 /* RoutingView.swift */; };
+		D72A76E7B29358053593FD75 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C45815CC895576E8C272B7 /* RootView.swift */; };
+		E29427757BFB8A21A3F1497F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9ACB27B5EC0393C5FC6B22 /* Theme.swift */; };
+		EC3C4E9A80E08D1F29B4DD2A /* XAirModernApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88942CC52AB89D8ACA657CF0 /* XAirModernApp.swift */; };
+		F184BCC940FA17D854E44EA3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5197A1BFC96CD5E4093C7F32 /* AppModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CDE36ADE75FC9F4F04E9226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 828E5B62116FE65E66C7EA2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 502D44B9F99D0E46926BBF05;
+			remoteInfo = XAirModern;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		125B85A650464337882E644D /* EQGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQGraph.swift; sourceTree = "<group>"; };
+		1C3E6861C734E410AD5C97FF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1EE42EC62B1A6C2031FBE1F5 /* EffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsView.swift; sourceTree = "<group>"; };
+		2BAA1AB6FB2057285FD02119 /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
+		5197A1BFC96CD5E4093C7F32 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		69C45815CC895576E8C272B7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		70FA6262006643828AD75D53 /* MixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerView.swift; sourceTree = "<group>"; };
+		73BFE81E9FAABADD2382D437 /* RoutingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingView.swift; sourceTree = "<group>"; };
+		7C40F223DF378E7E7EE01016 /* ParamControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamControls.swift; sourceTree = "<group>"; };
+		7CD5E3218E8AFC9CE9B08AD3 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		88942CC52AB89D8ACA657CF0 /* XAirModernApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAirModernApp.swift; sourceTree = "<group>"; };
+		97556D8F6DB0A8D0447844BB /* MetersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetersView.swift; sourceTree = "<group>"; };
+		A9486D321F149648494B9884 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		B560470D66CFF4FD8997BDFF /* XAirModernUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAirModernUITests.swift; sourceTree = "<group>"; };
+		CC9ACB27B5EC0393C5FC6B22 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D2AE558B2DB45FA8EBA53CDF /* XAirModern.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = XAirModern.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38EFF33F0E996EC9CB0A74F /* XAirModernUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = XAirModernUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC931EAAC48D6B93103AB002 /* ScenesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenesView.swift; sourceTree = "<group>"; };
+		F46FD9F1E83A76854B9E1EE6 /* XAirKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = XAirKit; path = Packages/XAirKit; sourceTree = SOURCE_ROOT; };
+		FE7BD937CDBBA410BC3C5D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CE7BCB5BEE79C85CEE3CAB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189BA91F26D587236B9168E2 /* XAirKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		473E0F7C064BB1BC7E74ED76 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CA99A1818BFA2F1F69F39120 /* Resources */,
+				B0E48E96CB45D6CAD3D23B1A /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7A6E07429DED7D88742D5744 = {
+			isa = PBXGroup;
+			children = (
+				473E0F7C064BB1BC7E74ED76 /* App */,
+				C1ADE9B6434B2BDE9FBAF600 /* Packages */,
+				FBAB80046C01E9C8934AA7F3 /* UITests */,
+				847A64A7DB158F12D55AEB4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		847A64A7DB158F12D55AEB4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AE558B2DB45FA8EBA53CDF /* XAirModern.app */,
+				D38EFF33F0E996EC9CB0A74F /* XAirModernUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0E48E96CB45D6CAD3D23B1A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5197A1BFC96CD5E4093C7F32 /* AppModel.swift */,
+				2BAA1AB6FB2057285FD02119 /* ChannelView.swift */,
+				A9486D321F149648494B9884 /* ConnectView.swift */,
+				1EE42EC62B1A6C2031FBE1F5 /* EffectsView.swift */,
+				125B85A650464337882E644D /* EQGraph.swift */,
+				1C3E6861C734E410AD5C97FF /* MainView.swift */,
+				97556D8F6DB0A8D0447844BB /* MetersView.swift */,
+				70FA6262006643828AD75D53 /* MixerView.swift */,
+				7C40F223DF378E7E7EE01016 /* ParamControls.swift */,
+				69C45815CC895576E8C272B7 /* RootView.swift */,
+				73BFE81E9FAABADD2382D437 /* RoutingView.swift */,
+				EC931EAAC48D6B93103AB002 /* ScenesView.swift */,
+				7CD5E3218E8AFC9CE9B08AD3 /* SetupView.swift */,
+				CC9ACB27B5EC0393C5FC6B22 /* Theme.swift */,
+				88942CC52AB89D8ACA657CF0 /* XAirModernApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C1ADE9B6434B2BDE9FBAF600 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F46FD9F1E83A76854B9E1EE6 /* XAirKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		CA99A1818BFA2F1F69F39120 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BD937CDBBA410BC3C5D0E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBAB80046C01E9C8934AA7F3 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B560470D66CFF4FD8997BDFF /* XAirModernUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45C1BEB66A1F633845E77789 /* XAirModernUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D8233B3FED014BB7CCB70F2 /* Build configuration list for PBXNativeTarget "XAirModernUITests" */;
+			buildPhases = (
+				009C984E38473647BD35FA86 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98C5F1B7487AF5170594583 /* PBXTargetDependency */,
+			);
+			name = XAirModernUITests;
+			packageProductDependencies = (
+			);
+			productName = XAirModernUITests;
+			productReference = D38EFF33F0E996EC9CB0A74F /* XAirModernUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		502D44B9F99D0E46926BBF05 /* XAirModern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB5E22404B800AA4B8965F5 /* Build configuration list for PBXNativeTarget "XAirModern" */;
+			buildPhases = (
+				B530FDE14B3E40F98F35CA1A /* Sources */,
+				AC9C60B127677B7BD94C8E76 /* Resources */,
+				0CE7BCB5BEE79C85CEE3CAB5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XAirModern;
+			packageProductDependencies = (
+				F93B546E608475049C5E2D00 /* XAirKit */,
+			);
+			productName = XAirModern;
+			productReference = D2AE558B2DB45FA8EBA53CDF /* XAirModern.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		828E5B62116FE65E66C7EA2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					45C1BEB66A1F633845E77789 = {
+						TestTargetID = 502D44B9F99D0E46926BBF05;
+					};
+					502D44B9F99D0E46926BBF05 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7FA0F5E4A3568EEACABC8E9E /* Build configuration list for PBXProject "XAirModern" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7A6E07429DED7D88742D5744;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				546868B59BC00794FB61F520 /* XCLocalSwiftPackageReference "Packages/XAirKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 847A64A7DB158F12D55AEB4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				502D44B9F99D0E46926BBF05 /* XAirModern */,
+				45C1BEB66A1F633845E77789 /* XAirModernUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC9C60B127677B7BD94C8E76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35CD16F42E3690F5514F95A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		009C984E38473647BD35FA86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528E1092C66E6978A8F37FA9 /* XAirModernUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B530FDE14B3E40F98F35CA1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F184BCC940FA17D854E44EA3 /* AppModel.swift in Sources */,
+				B886A90ACF2B76DEF3ABAC1B /* ChannelView.swift in Sources */,
+				A00809A4237C5C9058CF8566 /* ConnectView.swift in Sources */,
+				D113D21009808C20195CF452 /* EQGraph.swift in Sources */,
+				6FA2D55D904109439DB8B224 /* EffectsView.swift in Sources */,
+				9699F33718C0AC773DB0247E /* MainView.swift in Sources */,
+				057C30C6558C25809B94518E /* MetersView.swift in Sources */,
+				4517304761109A8952B6BF34 /* MixerView.swift in Sources */,
+				CA9CBD40D2D3CE764E04B5C4 /* ParamControls.swift in Sources */,
+				D72A76E7B29358053593FD75 /* RootView.swift in Sources */,
+				D43A5861FDF6B1815C1FE8F1 /* RoutingView.swift in Sources */,
+				CC941DA59F08637046D292A9 /* ScenesView.swift in Sources */,
+				178FEC826000CD7C101C3EAF /* SetupView.swift in Sources */,
+				E29427757BFB8A21A3F1497F /* Theme.swift in Sources */,
+				EC3C4E9A80E08D1F29B4DD2A /* XAirModernApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98C5F1B7487AF5170594583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 502D44B9F99D0E46926BBF05 /* XAirModern */;
+			targetProxy = 9CDE36ADE75FC9F4F04E9226 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15090AF4D6C2702D01733363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.XAirModernUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XAirModern;
+			};
+			name = Release;
+		};
+		2AA43355E11921E545E60DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		49DF62B3B08E006521F1D3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		6DDDA85AF71458546595F94D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/XAirModern.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.XAirModern;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F400B7BFDAA75F669EB0066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/XAirModern.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.XAirModern;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91B9D907305E560B88CB1FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.XAirModernUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XAirModern;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D8233B3FED014BB7CCB70F2 /* Build configuration list for PBXNativeTarget "XAirModernUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B9D907305E560B88CB1FFE /* Debug */,
+				15090AF4D6C2702D01733363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7CB5E22404B800AA4B8965F5 /* Build configuration list for PBXNativeTarget "XAirModern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DDDA85AF71458546595F94D /* Debug */,
+				6F400B7BFDAA75F669EB0066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7FA0F5E4A3568EEACABC8E9E /* Build configuration list for PBXProject "XAirModern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49DF62B3B08E006521F1D3AD /* Debug */,
+				2AA43355E11921E545E60DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		546868B59BC00794FB61F520 /* XCLocalSwiftPackageReference "Packages/XAirKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/XAirKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F93B546E608475049C5E2D00 /* XAirKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = XAirKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 828E5B62116FE65E66C7EA2F /* Project object */;
+}

@@ -1,0 +1,2 @@
+/gate OFF EXP2 -80.0 3.0 0 0.02 5 SELF
+/gate/filter OFF LC6 20.0

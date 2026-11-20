@@ -1,0 +1,91 @@
+name: XAirModern
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+packages:
+  XAirKit:
+    path: Packages/XAirKit
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+targets:
+  XAirModern:
+    type: application
+    platform: iOS
+    sources:
+      - App/Sources
+      - App/Resources
+    dependencies:
+      - package: XAirKit
+    entitlements:
+      path: App/XAirModern.entitlements
+      properties:
+        com.apple.developer.networking.multicast: true
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: X Air Modern
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        NSLocalNetworkUsageDescription: "X Air Modern finds and controls Behringer X Air and Midas MR mixers on your local network using UDP (OSC on port 10024)."
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        LSSupportsOpeningDocumentsInPlace: false
+        UISupportsDocumentBrowser: false
+        UTExportedTypeDeclarations:
+          - UTTypeIdentifier: com.example.xairmodern.scene
+            UTTypeDescription: X Air scene
+            UTTypeConformsTo: [public.plain-text]
+            UTTypeTagSpecification: { public.filename-extension: [scn] }
+          - UTTypeIdentifier: com.example.xairmodern.channel
+            UTTypeDescription: X Air channel preset
+            UTTypeConformsTo: [public.plain-text]
+            UTTypeTagSpecification: { public.filename-extension: [chn, input, gate, eq, comp, sends, output] }
+          - UTTypeIdentifier: com.example.xairmodern.effect
+            UTTypeDescription: X Air effect preset
+            UTTypeConformsTo: [public.plain-text]
+            UTTypeTagSpecification: { public.filename-extension: [efx] }
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.XAirModern
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_PREVIEWS: YES
+        SWIFT_STRICT_CONCURRENCY: complete
+  XAirModernUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: XAirModern
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.XAirModernUITests
+        TEST_TARGET_NAME: XAirModern
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+schemes:
+  XAirModern:
+    build:
+      targets:
+        XAirModern: all
+    test:
+      config: Debug
+      targets:
+        - package: XAirKit/XAirKitTests
+        - XAirModernUITests
