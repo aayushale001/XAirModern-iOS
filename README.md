@@ -2,11 +2,29 @@
 
 XAirModern is a native SwiftUI controller for Behringer X18, XR18, XR16 and XR12 mixers and Midas MR18 and MR12 mixers. It targets iOS and iPadOS 26 or later. Its parameter schema, file formats and control behaviour were reconstructed from X-AIR-Edit 1.8.1 and checked against Behringer’s protocol documentation. [Feature parity](FEATURE_PARITY.md) · [OSC protocol and model differences](PROTOCOL.md) · [Desktop evidence](research/FINDINGS-2026-11-20.md)
 
-## Run it
+## Install the IPA on iPhone
 
-Open `XAirModern.xcodeproj`, select the **XAirModern** scheme and run it on an iPhone or iPad simulator. On the connection screen, choose **Simulated XR18** to explore the USB interface and Ultranet routing, or **Simulated XR12** to try the USB recorder. Each simulated mixer runs on a private loopback port and exchanges real UDP packets with the controller. Meter and recorder data are synthetic.
+You need an iPhone running **iOS 26.0 or later**. AltStore Classic signs the IPA for your iPhone using your Apple Account. If AltStore Classic already opens on your phone, start at step 3.
 
-To work with a console, join its network and use **Connect by IP address** or select a discovered mixer. The default **Mixer → App** sync reads the console. **Edit offline…** starts from the selected model’s factory scene. **App → Mixer** sends the working scene to the console and reads each node back. A scene can also be exported to Files.
+1. On your Mac or Windows PC, install and run **AltServer**. Connect your unlocked iPhone by USB, tap **Trust** if prompted, then choose **Install AltStore** and your iPhone from the AltServer menu. To install or refresh apps over Wi-Fi later, enable Wi-Fi sync as shown in the guide for your computer. [macOS setup](https://faq.altstore.io/altstore-classic/how-to-install-altstore-macos) · [Windows setup](https://faq.altstore.io/altstore-classic/how-to-install-altstore-windows)
+2. On the iPhone, trust your own developer account under **Settings → General → VPN & Device Management** if prompted. Turn on **Settings → Privacy & Security → Developer Mode**, restart the phone and confirm after unlocking. [Apple’s Developer Mode guide](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device)
+3. In Safari on your iPhone, download `XAirModern-1.0-sideload.ipa` and find it in the **Files** app. [Download the iPhone IPA](https://github.com/aayushale001/XAirModern-iOS/releases/download/v1.0/XAirModern-1.0-sideload.ipa) · [GitHub release](https://github.com/aayushale001/XAirModern-iOS/releases/tag/v1.0)
+4. Keep AltServer running and connect your iPhone to the computer by USB or the same Wi-Fi. Open **AltStore Classic → My Apps**, tap **+** and select the IPA from Files. When installation finishes, open **X Air Modern** from the Home Screen. [AltServer connection guide](https://faq.altstore.io/altstore-classic/altserver)
+
+With a free Apple Account, the app’s signing profile lasts seven days. To renew it before it expires, choose **My Apps → Refresh All** while AltServer is reachable. [AltStore refresh guide](https://faq.altstore.io/altstore-classic/your-altstore)
+
+## Use the app on iPhone
+
+**Try it without a mixer.** On the connection screen, tap **Simulated XR18**. In **Mixer**, drag a fader, tap a channel name, then open **Channel** to edit its EQ. To try the USB recorder, use the **⋯** connection menu to **Disconnect**, choose **Simulated XR12**, then open **Tools → Setup → Recorder**. The built-in mixers run locally over UDP and supply simulated meter and recorder data. [iPhone mixer screenshot](screenshots/iphone-mixer-XR18.png)
+
+**Connect to a real mixer.** The release IPA omits the entitlement for broadcast discovery. You can connect by IP even when the **Mixers on this network** list is empty.
+
+1. Join the mixer’s Wi-Fi network on your iPhone, or join the same router as the mixer. If you are using the simulator, tap **⋯ → Disconnect** to return to the connection screen.
+2. Allow **Local Network** access when iOS asks. You can enable it later under **Settings → Privacy & Security → Local Network → X Air Modern**.
+3. Under **Connection options**, choose **Mixer → App (recommended)** to read the console’s current mix. Under **Connect by IP address**, enter the mixer’s address and tap **Connect**. Use `192.168.1.1` in the mixer’s own access-point mode. With a router, use the address assigned to the mixer.
+4. Wait for synchronization to finish. The faders now control the live console. Use **Mixer** for levels and mutes, **Channel** for EQ and dynamics, and **Tools** for routing, meters and setup.
+
+For offline preparation, **Edit offline…** starts from the selected model’s factory scene. You can export it to Files. Choose **App → Mixer** when you intend to write that working scene to the console.
 
 ## Controls
 
@@ -18,7 +36,7 @@ To work with a console, join its network and use **Connect by IP address** or se
 
 ## Build and verify
 
-The checked-in Xcode project opens directly. Regenerate it with `xcodegen generate` after editing `project.yml`. The verification devices used Xcode 27.2 and the iOS 26.5 simulator runtime. Run from the project directory.
+To run from source, open `XAirModern.xcodeproj`, select the **XAirModern** scheme and run it on an iPhone or iPad simulator. Regenerate the project with `xcodegen generate` after editing `project.yml`. The verification devices used Xcode 27.2 and the iOS 26.5 simulator runtime. Run the following commands from the project directory.
 
 ```sh
 swift test --package-path Packages/XAirKit
@@ -55,7 +73,7 @@ The mixer and channel EQ passed the automated Dynamic Type, element description,
 | XR12 recorder | [iPhone](screenshots/iphone-recorder-playback.png) | [iPad](screenshots/ipad-recorder-playback.png) |
 | Precision Limiter in landscape | [iPhone](screenshots/iphone-effect-limiter-landscape.png) | [iPad](screenshots/ipad-effect-limiter-landscape.png) |
 
-## Physical devices
+## Signing a build from Xcode
 
 1. Choose your signing team and a bundle identifier you own in the XAirModern target. The checked-in identifier is `com.example.XAirModern`.
 2. Allow **Local Network** access when prompted. It can be re-enabled in Settings under **Privacy & Security → Local Network**. [Apple local-network privacy guidance](https://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy)
